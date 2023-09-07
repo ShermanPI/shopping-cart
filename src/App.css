@@ -1,0 +1,31 @@
+.products-container{
+    width: 70%;
+    margin-inline: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.product-item{
+    list-style: none;
+    background-color: #191919;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.product-image img{
+    width: 100%;
+    height: 150px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.title-price{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
