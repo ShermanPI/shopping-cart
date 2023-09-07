@@ -2,7 +2,7 @@
 
 ecommerce
 
-- Returns a list of products that come from a JSON
+✅ Returns a list of products that come from a JSON
 - Add a filter by category
 - Add a filter by price
 
