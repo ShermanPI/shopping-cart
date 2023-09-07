@@ -1,6 +1,6 @@
 # statement
 
-ecommerce
+ecommerce to practice useId, useContext and useReduce
 
 ✅ Returns a list of products that come from a JSON
 - Add a filter by category
