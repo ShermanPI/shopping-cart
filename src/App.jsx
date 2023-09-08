@@ -1,25 +1,19 @@
 import './App.css'
-import { products } from './mocks/products.json'
+import { useState } from 'react'
+import { products as initialProducts } from './mocks/products.json'
+import Products from './components/Products'
+import useFilter from './hooks/useFilter'
+import Header from './components/Header'
 
 function App () {
+  const [products] = useState(initialProducts)
+  const { filterProducts } = useFilter()
+
   return (
     <>
-      <h3>Amazonas</h3>
+      <Header />
       <ul className='products-container'>
-        {products.map(el => {
-          return (
-            <li key={el.id} className='product-item'>
-              <div className='product-image'>
-                <img src={el.thumbnail} alt={`image of ${el.title}`} />
-              </div>
-
-              <div>
-                <b>{el.title}</b>
-                <p>US${el.price}</p>
-              </div>
-            </li>
-          )
-        })}
+        <Products products={filterProducts(products)} />
       </ul>
     </>
   )

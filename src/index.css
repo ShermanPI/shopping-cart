@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -9,7 +10,7 @@
   --border-radius: 11px;
   --yellow-highlight: #fffab7;
   --links: #0f6dff;
-  --background-body: #fff;
+  --background-body: #323437;
   --background-main: #f1f1f1;
   --background-inputs: #fcfcfc;
   --text: #1c1d1e;
@@ -58,7 +59,7 @@ aside {
   font-style: italic;
   color: var(--text);
   background-color: var(--background-main);
-  border-radius: var(--border-radius);
+  /* border-radius: var(--border-radius); */
 }
 h1 {
   font-size: 2.5rem;
@@ -196,7 +197,7 @@ sup {
 audio,
 img,
 video {
-  border-radius: var(--border-radius);
+  /* border-radius: var(--border-radius); */
   max-width: 100%;
 }
 img {

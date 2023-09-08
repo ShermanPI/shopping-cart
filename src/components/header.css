@@ -1,0 +1,13 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e2b714;
+    color: #0f0f0f;
+    margin-bottom: 2rem;
+}
+
+.filter-form{
+    background-color: #3f3f3f;
+    color: #fff;
+}
